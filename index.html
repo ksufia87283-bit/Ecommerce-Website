@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SK — Style That Defines You</title>
+<meta name="description" content="SK is a premium fashion house for sarees, hoodies, denim, dresses and more.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ TOP ANNOUNCEMENT BAR ============ -->
+<div class="announce-bar" id="announceBar">
+  <p>Free worldwide shipping on orders over $120 &nbsp;•&nbsp; New season, new obsessions &nbsp;•&nbsp; <span class="gold-text">SK REWARDS</span> now live</p>
+</div>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <a href="#home" class="logo" aria-label="SK Home">
+      <span class="logo-mark">
+        <span class="logo-s">S</span><span class="logo-k">K</span>
+      </span>
+      <span class="logo-sub">MAISON</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#shop" class="nav-link">Shop</a>
+      <a href="#categories" class="nav-link">Categories</a>
+      <a href="#new-arrivals" class="nav-link">New Arrivals</a>
+      <a href="#best-sellers" class="nav-link">Best Sellers</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="icon-btn" id="searchToggle" aria-label="Search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">
+        <svg class="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+      <button class="icon-btn" id="wishlistToggle" aria-label="Wishlist">
+        <svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.9-10-9.3C.4 8.2 2 4.5 5.6 4c2-.3 3.8.7 4.9 2.3C11.6 4.7 13.4 3.7 15.4 4c3.6.5 5.2 4.2 3.6 7.7C19.5 16.1 12 21 12 21z"/></svg>
+        <span class="badge" id="wishlistBadge">0</span>
+      </button>
+      <button class="icon-btn" id="cartToggle" aria-label="Cart">
+        <svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h8.6a2 2 0 0 0 2-1.6L23 6H6"/></svg>
+        <span class="badge" id="cartBadge">0</span>
+      </button>
+      <div class="auth-actions">
+        <button class="btn-text" id="loginOpenBtn">Login</button>
+        <button class="btn-gold-sm" id="signupOpenBtn">Sign Up</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- expandable search -->
+  <div class="search-panel" id="searchPanel">
+    <div class="search-panel-inner">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" id="searchInput" placeholder="Search hoodie, saree, jeans, kurti, jacket...">
+      <button id="searchClose" aria-label="Close search">&times;</button>
+    </div>
+    <div class="search-suggestions" id="searchSuggestions"></div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=1600&q=80&auto=format" alt="Fashion campaign" class="hero-img active">
+    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1600&q=80&auto=format" alt="Fashion campaign" class="hero-img">
+    <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=1600&q=80&auto=format" alt="Fashion campaign" class="hero-img">
+    <div class="hero-overlay"></div>
+  </div>
+
+  <span class="floating-el fl-1">✦</span>
+  <span class="floating-el fl-2">✦</span>
+  <span class="floating-el fl-3">SK</span>
+  <span class="floating-el fl-4">✦</span>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow reveal">The Autumn Atelier Edit</p>
+    <h1 class="hero-title reveal">Style That<br><em>Defines</em> You</h1>
+    <p class="hero-sub reveal">Premium fashion for every occasion.</p>
+    <div class="hero-btns reveal">
+      <a href="#shop" class="btn-gold">Shop Now</a>
+      <a href="#categories" class="btn-outline">Explore Collection</a>
+    </div>
+  </div>
+
+  <div class="hero-seal">
+    <span>SK</span>
+  </div>
+
+  <a href="#features" class="scroll-cue" aria-label="Scroll down">
+    <span></span>
+  </a>
+</section>
+
+<!-- ============ FEATURES ============ -->
+<section class="features" id="features">
+  <div class="feature-card reveal">
+    <div class="feature-icon">🚚</div>
+    <h3>Free Shipping</h3>
+    <p>On all orders over $120</p>
+  </div>
+  <div class="feature-card reveal">
+    <div class="feature-icon">↺</div>
+    <h3>Easy Returns</h3>
+    <p>30-day hassle-free returns</p>
+  </div>
+  <div class="feature-card reveal">
+    <div class="feature-icon">☎</div>
+    <h3>24/7 Support</h3>
+    <p>Always here to help you</p>
+  </div>
+  <div class="feature-card reveal">
+    <div class="feature-icon">🔒</div>
+    <h3>Secure Payments</h3>
+    <p>100% protected checkout</p>
+  </div>
+  <div class="feature-card reveal">
+    <div class="feature-icon">◆</div>
+    <h3>Premium Quality</h3>
+    <p>Hand-finished materials</p>
+  </div>
+</section>
+
+<!-- ============ STATS COUNTER ============ -->
+<section class="stats reveal">
+  <div class="stat">
+    <span class="stat-num" data-target="120">0</span><span class="stat-plus">k+</span>
+    <p>Happy Clients</p>
+  </div>
+  <div class="stat">
+    <span class="stat-num" data-target="100">0</span><span class="stat-plus">+</span>
+    <p>Curated Styles</p>
+  </div>
+  <div class="stat">
+    <span class="stat-num" data-target="35">0</span>
+    <p>Countries Shipped</p>
+  </div>
+  <div class="stat">
+    <span class="stat-num" data-target="12">0</span>
+    <p>Years of Craft</p>
+  </div>
+</section>
+
+<!-- ============ NEW ARRIVALS (horizontal scroll) ============ -->
+<section class="section" id="new-arrivals">
+  <div class="section-head reveal">
+    <p class="eyebrow">Just Landed</p>
+    <h2>New Arrivals</h2>
+  </div>
+  <div class="hscroll" id="newArrivalsScroll"></div>
+</section>
+
+<!-- ============ PROMO BANNER ============ -->
+<section class="promo reveal">
+  <div class="promo-content">
+    <p class="promo-eyebrow">Limited Time</p>
+    <h2>Summer Sale</h2>
+    <p class="promo-sub">Up to <span class="gold-text">60% OFF</span> across the collection</p>
+    <a href="#shop" class="btn-gold">Shop Now</a>
+  </div>
+</section>
+
+<!-- ============ CATEGORIES ============ -->
+<section class="section" id="categories">
+  <div class="section-head reveal">
+    <p class="eyebrow">Browse</p>
+    <h2>Shop by Category</h2>
+  </div>
+  <div class="cat-grid" id="catGrid"></div>
+</section>
+
+<!-- ============ SHOP (filters + grid) ============ -->
+<section class="section shop-section" id="shop">
+  <div class="section-head reveal">
+    <p class="eyebrow">The Full Edit</p>
+    <h2>All Products</h2>
+  </div>
+
+  <div class="shop-layout">
+    <!-- Sidebar filters -->
+    <aside class="filters" id="filtersPanel">
+      <div class="filters-head">
+        <h3>Filters</h3>
+        <button id="clearFilters">Clear all</button>
+      </div>
+
+      <div class="filter-group">
+        <h4>Category</h4>
+        <div class="filter-options" id="filterCategory"></div>
+      </div>
+
+      <div class="filter-group">
+        <h4>Gender</h4>
+        <div class="filter-options">
+          <label><input type="checkbox" class="gender-check" value="Women"><span>Women's</span></label>
+          <label><input type="checkbox" class="gender-check" value="Men"><span>Men's</span></label>
+          <label><input type="checkbox" class="gender-check" value="Kids"><span>Kids</span></label>
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <h4>Price Range</h4>
+        <input type="range" id="priceRange" min="0" max="300" value="300">
+        <div class="price-range-label">$0 — $<span id="priceRangeVal">300</span></div>
+      </div>
+
+      <div class="filter-group">
+        <h4>Rating</h4>
+        <div class="filter-options" id="filterRating"></div>
+      </div>
+
+      <div class="filter-group">
+        <h4>Availability</h4>
+        <div class="filter-options">
+          <label><input type="checkbox" id="inStockOnly"><span>In Stock Only</span></label>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Product grid -->
+    <div class="shop-main">
+      <div class="shop-toolbar">
+        <p id="resultsCount">100 products</p>
+        <div class="toolbar-right">
+          <select id="sortSelect">
+            <option value="newest">Newest</option>
+            <option value="popular">Popular</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+          </select>
+        </div>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <div class="load-more-wrap">
+        <button class="btn-outline" id="loadMoreBtn">Load More</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BEST SELLERS ============ -->
+<section class="section alt-bg" id="best-sellers">
+  <div class="section-head reveal">
+    <p class="eyebrow">Loved by Many</p>
+    <h2>Best Sellers</h2>
+  </div>
+  <div class="product-grid" id="bestSellersGrid"></div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="section testimonials" id="about">
+  <div class="section-head reveal">
+    <p class="eyebrow">Voices</p>
+    <h2>What Our Clients Say</h2>
+  </div>
+  <div class="testi-track-wrap">
+    <button class="testi-nav prev" id="testiPrev" aria-label="Previous">&#10094;</button>
+    <div class="testi-track" id="testiTrack"></div>
+    <button class="testi-nav next" id="testiNext" aria-label="Next">&#10095;</button>
+  </div>
+  <div class="testi-dots" id="testiDots"></div>
+</section>
+
+<!-- ============ NEWSLETTER ============ -->
+<section class="newsletter reveal">
+  <div class="newsletter-inner">
+    <p class="eyebrow">Stay In The Loop</p>
+    <h2>Join the SK Inner Circle</h2>
+    <p>Subscribe for early access to drops, private sales and styling notes.</p>
+    <form id="newsletterForm">
+      <input type="email" placeholder="Enter your email address" id="newsletterEmail" required>
+      <button type="submit" class="btn-gold">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" id="contact">
+  <div class="footer-top">
+    <div class="footer-col about-col">
+      <a href="#home" class="logo footer-logo">
+        <span class="logo-mark"><span class="logo-s">S</span><span class="logo-k">K</span></span>
+      </a>
+      <p>SK Maison crafts considered, quietly luxurious clothing for people who dress with intention — since 2014.</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="Pinterest">PN</a>
+        <a href="#" aria-label="X">X</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#new-arrivals">New Arrivals</a>
+      <a href="#best-sellers">Best Sellers</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Categories</h4>
+      <a href="#" data-cat-link="Sarees">Sarees</a>
+      <a href="#" data-cat-link="Hoodies">Hoodies</a>
+      <a href="#" data-cat-link="Dresses">Dresses</a>
+      <a href="#" data-cat-link="Jeans">Jeans</a>
+      <a href="#" data-cat-link="Shoes">Shoes</a>
+    </div>
+    <div class="footer-col">
+      <h4>Customer Service</h4>
+      <a href="#">Track Order</a>
+      <a href="#">Shipping Info</a>
+      <a href="#">Returns & Exchanges</a>
+      <a href="#">FAQs</a>
+      <a href="#">Size Guide</a>
+    </div>
+    <div class="footer-col">
+      <h4>Policies</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Cookie Policy</a>
+      <a href="#">Accessibility</a>
+    </div>
+  </div>
+  <div class="payment-icons">
+    <span>VISA</span><span>MASTERCARD</span><span>AMEX</span><span>PAYPAL</span><span>APPLE PAY</span>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> SK Maison. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ============ SCROLL TO TOP ============ -->
+<button class="scroll-top" id="scrollTopBtn" aria-label="Scroll to top">
+  <svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<!-- ============ TOAST CONTAINER ============ -->
+<div class="toast-container" id="toastContainer"></div>
+
+<!-- ============ CART DRAWER ============ -->
+<div class="overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer">
+  <div class="drawer-head">
+    <h3>Your Bag <span id="cartCountLabel">(0)</span></h3>
+    <button id="cartCloseBtn" aria-label="Close cart">&times;</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-empty-state" id="cartEmptyState">
+    <p>Your bag is empty</p>
+    <a href="#shop" class="btn-outline" id="cartEmptyShopBtn">Start Shopping</a>
+  </div>
+  <div class="cart-summary" id="cartSummary">
+    <div class="summary-row"><span>Subtotal</span><span id="cartSubtotal">$0.00</span></div>
+    <div class="summary-row"><span>Tax (8%)</span><span id="cartTax">$0.00</span></div>
+    <div class="summary-row"><span>Shipping</span><span id="cartShipping">$0.00</span></div>
+    <div class="summary-row total"><span>Grand Total</span><span id="cartTotal">$0.00</span></div>
+    <button class="btn-gold full-w" id="checkoutBtn">Checkout</button>
+    <button class="btn-text full-w" id="emptyCartBtn">Empty Cart</button>
+  </div>
+</aside>
+
+<!-- ============ WISHLIST DRAWER ============ -->
+<aside class="cart-drawer" id="wishlistDrawer">
+  <div class="drawer-head">
+    <h3>Wishlist <span id="wishlistCountLabel">(0)</span></h3>
+    <button id="wishlistCloseBtn" aria-label="Close wishlist">&times;</button>
+  </div>
+  <div class="cart-items" id="wishlistItems"></div>
+  <div class="cart-empty-state" id="wishlistEmptyState">
+    <p>Your wishlist is empty</p>
+    <a href="#shop" class="btn-outline" id="wishlistEmptyShopBtn">Discover Products</a>
+  </div>
+</aside>
+
+<!-- ============ LOGIN MODAL ============ -->
+<div class="modal-overlay" id="loginModal">
+  <div class="modal auth-modal">
+    <button class="modal-close" data-close="loginModal">&times;</button>
+    <p class="eyebrow">Welcome Back</p>
+    <h2>Login to SK</h2>
+    <form id="loginForm" novalidate>
+      <div class="field">
+        <label for="loginEmail">Email</label>
+        <input type="email" id="loginEmail" placeholder="you@example.com">
+        <span class="error-msg" id="loginEmailError"></span>
+      </div>
+      <div class="field">
+        <label for="loginPassword">Password</label>
+        <input type="password" id="loginPassword" placeholder="••••••••">
+        <span class="error-msg" id="loginPasswordError"></span>
+      </div>
+      <div class="field-row">
+        <label class="checkbox-row"><input type="checkbox" id="rememberMe"><span>Remember Me</span></label>
+        <a href="#" class="forgot-link" id="forgotPasswordLink">Forgot Password?</a>
+      </div>
+      <button type="submit" class="btn-gold full-w">Login</button>
+      <div class="divider"><span>or continue with</span></div>
+      <div class="social-auth">
+        <button type="button" class="btn-social">Google</button>
+        <button type="button" class="btn-social">Facebook</button>
+      </div>
+      <p class="switch-auth">New to SK? <a href="#" id="switchToSignup">Create an account</a></p>
+    </form>
+  </div>
+</div>
+
+<!-- ============ SIGNUP MODAL ============ -->
+<div class="modal-overlay" id="signupModal">
+  <div class="modal auth-modal">
+    <button class="modal-close" data-close="signupModal">&times;</button>
+    <p class="eyebrow">Join Us</p>
+    <h2>Create Your Account</h2>
+    <form id="signupForm" novalidate>
+      <div class="field">
+        <label for="signupName">Full Name</label>
+        <input type="text" id="signupName" placeholder="Jane Doe">
+        <span class="error-msg" id="signupNameError"></span>
+      </div>
+      <div class="field">
+        <label for="signupEmail">Email</label>
+        <input type="email" id="signupEmail" placeholder="you@example.com">
+        <span class="error-msg" id="signupEmailError"></span>
+      </div>
+      <div class="field">
+        <label for="signupPhone">Phone</label>
+        <input type="tel" id="signupPhone" placeholder="+1 234 567 8900">
+        <span class="error-msg" id="signupPhoneError"></span>
+      </div>
+      <div class="field">
+        <label for="signupPassword">Password</label>
+        <input type="password" id="signupPassword" placeholder="••••••••">
+        <span class="error-msg" id="signupPasswordError"></span>
+      </div>
+      <div class="field">
+        <label for="signupConfirm">Confirm Password</label>
+        <input type="password" id="signupConfirm" placeholder="••••••••">
+        <span class="error-msg" id="signupConfirmError"></span>
+      </div>
+      <label class="checkbox-row"><input type="checkbox" id="signupTerms"><span>I agree to the Terms of Service &amp; Privacy Policy</span></label>
+      <span class="error-msg" id="signupTermsError"></span>
+      <button type="submit" class="btn-gold full-w">Create Account</button>
+      <p class="switch-auth">Already have an account? <a href="#" id="switchToLogin">Login</a></p>
+    </form>
+  </div>
+</div>
+
+<!-- ============ QUICK VIEW MODAL ============ -->
+<div class="modal-overlay" id="quickViewModal">
+  <div class="modal quickview-modal">
+    <button class="modal-close" data-close="quickViewModal">&times;</button>
+    <div class="qv-body" id="qvBody"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
